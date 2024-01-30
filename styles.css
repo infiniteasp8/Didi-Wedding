@@ -1,0 +1,121 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+    transition: background-color 0.3s ease;
+}
+
+header {
+    background: linear-gradient(to right, #ff8c66, #ff4d00);
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+    transition: background 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro,
+.event-details,
+.venue-map,
+.contact-details,
+footer {
+    padding: 20px;
+    background: linear-gradient(to right, #f9f9f9, #e6e6e6);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.event-details {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.event-details div {
+    flex: 1;
+}
+
+.venue-map iframe {
+    width: 100%;
+}
+
+.contact-details h2 {
+    color: #ff4d00;
+}
+
+.contact-details p {
+    color: #666;
+    margin: 10px 0;
+}
+
+.contact-details a {
+    color: #ff8c66;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-details a:hover {
+    color: #e60073;
+}
+
+footer {
+    background: linear-gradient(to right, #222, #111);
+    color: #fff;
+    text-align: center;
+}
+
+.container:hover,
+footer:hover,
+header:hover {
+    background: linear-gradient(to right, #444, #333);
+    color: #fff;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.intro {
+    transition: background 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container:hover .intro {
+    background: linear-gradient(to right, #ff8c66, #ff4d00);
+    color: #333;
+}
+
+@media only screen and (max-width: 768px) {
+    .intro,
+    .event-details,
+    .contact-details,
+    footer {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .event-details {
+        margin-top: 15px;
+    }
+
+    .container:hover .intro {
+        margin-bottom: 15px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .event-details {
+        flex-direction: column;
+    }
+}
